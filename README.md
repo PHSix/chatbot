@@ -1,30 +1,20 @@
-# React + TypeScript + Vite
+# Chatbot
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+一个在线聊天机器人，使用的api来自[openrouter](https://openrouter.ai/)，调用`gpt-3.5-turbo-1106`进行问答，开始使用前请申请好对应的`token`。
 
-Currently, two official plugins are available:
+# How to start?
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
-
-## Expanding the ESLint configuration
-
-If you are developing a production application, we recommend updating the configuration to enable type aware lint rules:
-
-- Configure the top-level `parserOptions` property like this:
-
-```js
-export default {
-  // other rules...
-  parserOptions: {
-    ecmaVersion: 'latest',
-    sourceType: 'module',
-    project: ['./tsconfig.json', './tsconfig.node.json'],
-    tsconfigRootDir: __dirname,
-  },
-}
+```bash
+# 克隆此项目并切换到目录中
+pnpm install # 安装依赖
+pnpm run dev # 启动项目
 ```
 
-- Replace `plugin:@typescript-eslint/recommended` to `plugin:@typescript-eslint/recommended-type-checked` or `plugin:@typescript-eslint/strict-type-checked`
-- Optionally add `plugin:@typescript-eslint/stylistic-type-checked`
-- Install [eslint-plugin-react](https://github.com/jsx-eslint/eslint-plugin-react) and add `plugin:react/recommended` & `plugin:react/jsx-runtime` to the `extends` list
+或者你可以直接访问[Chatbot online demo](https://chatbot-nu-snowy.vercel.app/)
+
+# Technology Stack
+- [react](https://react.dev)
+- [vitejs](https://vitejs.dev/)
+- [mui](https://mui.com/)
+- [tailwindcss](https://tailwindcss.com/)
+- [openai-lib](https://www.npmjs.com/package/openai)
